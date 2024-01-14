@@ -10,7 +10,6 @@ import UIKit
 class ButtonsViewController: UIViewController {
 
 	@IBOutlet weak var textFieldButton: UIButton!
-	
 	override func viewDidLoad() {
         super.viewDidLoad()
     }

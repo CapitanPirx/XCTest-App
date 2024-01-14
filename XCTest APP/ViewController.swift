@@ -18,10 +18,9 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		hideNextButton()
-		// Do any additional setup after loading the view.
+		setAccessibilityButton(nextButton, "NEXT_BUTTON")
 	}
 	@IBAction func changeGreeting() {
-		greetingView.text = "Замечательно!"
 		okayButton.isHidden = true
 		nextButton.isHidden = false
 		
@@ -29,6 +28,10 @@ class ViewController: UIViewController {
 
 	func hideNextButton() {
 		nextButton.isHidden = true
+	}
+	
+	func setAccessibilityButton(_ button: UIButton,_ identifier: String) {
+		button.accessibilityIdentifier = identifier
 	}
 }
 
