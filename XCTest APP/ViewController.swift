@@ -21,6 +21,7 @@ class ViewController: UIViewController {
 		setAccessibilityButton(nextButton, "NEXT_BUTTON")
 	}
 	@IBAction func changeGreeting() {
+		greetingView.text = "Отлично! Начать?"
 		okayButton.isHidden = true
 		nextButton.isHidden = false
 		
