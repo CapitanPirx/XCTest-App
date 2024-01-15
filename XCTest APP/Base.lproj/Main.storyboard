@@ -116,7 +116,7 @@
                                             <color key="baseBackgroundColor" red="0.31975097349999998" green="0.72720682989999996" blue="0.52090635230000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="changeGreeting" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kyo-FU-ASm"/>
+                                            <action selector="alert:forEvent:" destination="687-kA-8zC" eventType="touchUpInside" id="zRN-SV-PsM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnX-Lb-SQk">
@@ -364,7 +364,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JuQ-q9-pRg"/>
+        <segue reference="xul-Lg-U45"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="1024" height="1024"/>
