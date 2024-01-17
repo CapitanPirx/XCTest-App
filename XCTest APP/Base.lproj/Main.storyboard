@@ -132,6 +132,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="changeGreeting" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttE-Jh-uk8"/>
+                                            <action selector="notification:" destination="687-kA-8zC" eventType="touchUpInside" id="cyO-dl-BJF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL8-Cx-t4W">
@@ -364,6 +365,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="vmk-Rf-3RX"/>
         <segue reference="xul-Lg-U45"/>
     </inferredMetricsTieBreakers>
     <resources>
