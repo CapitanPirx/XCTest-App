@@ -21,13 +21,13 @@
                                 <rect key="frame" x="25" y="227" width="378" height="318"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNm-uW-T4e">
-                                        <rect key="frame" x="164" y="0.0" width="50" height="34.666666666666664"/>
+                                        <rect key="frame" x="164" y="0.0" width="50" height="44.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oaI-x3-I2d">
-                                        <rect key="frame" x="69.333333333333329" y="56.666666666666693" width="239.33333333333337" height="111.66666666666669"/>
+                                        <rect key="frame" x="80" y="66.666666666666686" width="218" height="101.66666666666669"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="oaI-x3-I2d" secondAttribute="height" multiplier="324:151" id="fbj-p4-tuf"/>
                                         </constraints>
@@ -179,6 +179,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="changeGreeting" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wd-ry-Hpd"/>
+                                            <segue destination="7tr-ra-0ta" kind="show" id="OqP-AF-2Wz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXP-zk-n6Z">
@@ -361,17 +362,146 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHN-cd-fXh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1534.8837209302326" y="-28.326180257510732"/>
+            <point key="canvasLocation" x="1567" y="-29"/>
+        </scene>
+        <!--textFieldsView-->
+        <scene sceneID="UcZ-VU-Iva">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="7tr-ra-0ta" userLabel="textFieldsView" customClass="DatePickerViewController" customModule="XCTest_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Ca-js-BXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.15000000596046448" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="T4T-ZD-m5A">
+                                <rect key="frame" x="-217" y="-84" width="1024" height="1024"/>
+                                <color key="backgroundColor" red="1" green="0.95193417319999996" blue="0.70221484479999996" alpha="0.56008184520000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1024" id="Gth-x4-ClE"/>
+                                    <constraint firstAttribute="width" constant="1024" id="X2W-kc-a0Y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-qG-pjB">
+                                <rect key="frame" x="124.33333333333333" y="90" width="179.33333333333337" height="31"/>
+                                <color key="backgroundColor" red="0.97602129150000005" green="0.99469206050000003" blue="1" alpha="0.61742665819999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="owL-KE-J3a">
+                                <rect key="frame" x="89" y="841" width="250" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="KdB-a0-bSB"/>
+                                    <constraint firstAttribute="width" constant="250" id="NRI-Mj-7a8"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Назад">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseBackgroundColor" red="0.31975097349999998" green="0.72720682989999996" blue="0.52090635230000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="changeGreeting" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9J-zN-WGn"/>
+                                    <segue destination="687-kA-8zC" kind="show" id="wM8-LW-kLx"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wmq-oW-VMJ">
+                                <rect key="frame" x="39" y="161" width="350" height="250.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введи дату рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLG-Be-be5">
+                                        <rect key="frame" x="65.666666666666671" y="0.0" width="218.66666666666663" height="26.333333333333332"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="wuL-g6-Nod">
+                                        <rect key="frame" x="0.0" y="34" width="350" height="216"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="0T6-VY-QoF"/>
+                                        </constraints>
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="727268400">
+                                            <!--2024-01-18 11:00:00 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="datePicker:" destination="7tr-ra-0ta" eventType="valueChanged" id="4PT-DT-7j6"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="hJA-vB-8Qo"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tH1-no-BsR">
+                                <rect key="frame" x="89" y="431.33333333333331" width="250" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Dng-As-bNQ"/>
+                                    <constraint firstAttribute="width" constant="250" id="uhr-eG-0dv"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <buttonConfiguration key="configuration" style="gray" title="И что?">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseBackgroundColor" red="0.31975097349999998" green="0.72720682989999996" blue="0.52090635230000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="changeGreeting" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxj-EI-4H5"/>
+                                    <action selector="dateResultButton:" destination="7tr-ra-0ta" eventType="touchUpInside" id="cuB-BL-Ot5"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tga-AP-W31">
+                                <rect key="frame" x="89" y="506.33333333333326" width="250" height="66"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="13j-x1-bvP"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5aC-ox-tA2"/>
+                        <color key="backgroundColor" red="0.92193424700000004" green="0.95565241580000004" blue="0.82141369580000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tH1-no-BsR" firstAttribute="top" secondItem="Wmq-oW-VMJ" secondAttribute="bottom" constant="20" id="1fF-pe-gXJ"/>
+                            <constraint firstItem="tga-AP-W31" firstAttribute="centerX" secondItem="2Ca-js-BXJ" secondAttribute="centerX" id="7aA-X8-UIb"/>
+                            <constraint firstItem="owL-KE-J3a" firstAttribute="centerX" secondItem="2Ca-js-BXJ" secondAttribute="centerX" id="7rX-RI-7rt"/>
+                            <constraint firstItem="tga-AP-W31" firstAttribute="top" secondItem="tH1-no-BsR" secondAttribute="bottom" constant="30" id="AXX-HY-A0e"/>
+                            <constraint firstItem="T4T-ZD-m5A" firstAttribute="trailing" secondItem="5aC-ox-tA2" secondAttribute="trailing" constant="379" id="DM5-pU-jSg"/>
+                            <constraint firstItem="T4T-ZD-m5A" firstAttribute="top" secondItem="2Ca-js-BXJ" secondAttribute="top" constant="-84" id="JuN-Fp-DsF"/>
+                            <constraint firstItem="Wmq-oW-VMJ" firstAttribute="top" secondItem="4sX-qG-pjB" secondAttribute="bottom" constant="40" id="Llw-hn-rxF"/>
+                            <constraint firstItem="tH1-no-BsR" firstAttribute="centerX" secondItem="2Ca-js-BXJ" secondAttribute="centerX" id="PDj-9i-qg2"/>
+                            <constraint firstAttribute="bottom" secondItem="T4T-ZD-m5A" secondAttribute="bottom" constant="-14" id="QNy-Au-RE1"/>
+                            <constraint firstItem="tga-AP-W31" firstAttribute="centerX" secondItem="2Ca-js-BXJ" secondAttribute="centerX" id="Zye-Di-3bQ"/>
+                            <constraint firstAttribute="trailing" secondItem="T4T-ZD-m5A" secondAttribute="trailing" constant="-379" id="bbB-ps-KmU"/>
+                            <constraint firstItem="owL-KE-J3a" firstAttribute="centerX" secondItem="2Ca-js-BXJ" secondAttribute="centerX" id="cLH-HR-ztp"/>
+                            <constraint firstItem="tga-AP-W31" firstAttribute="leading" secondItem="tH1-no-BsR" secondAttribute="leading" id="huJ-W9-s85"/>
+                            <constraint firstItem="Wmq-oW-VMJ" firstAttribute="centerX" secondItem="2Ca-js-BXJ" secondAttribute="centerX" id="lYO-BJ-t1f"/>
+                            <constraint firstItem="4sX-qG-pjB" firstAttribute="top" secondItem="5aC-ox-tA2" secondAttribute="top" constant="90" id="nql-Cd-wUC"/>
+                            <constraint firstAttribute="bottom" secondItem="T4T-ZD-m5A" secondAttribute="bottom" constant="-14" id="sZ0-ie-QZl"/>
+                            <constraint firstItem="T4T-ZD-m5A" firstAttribute="leading" secondItem="2Ca-js-BXJ" secondAttribute="leading" constant="-217" id="sbg-1P-IZA"/>
+                            <constraint firstItem="4sX-qG-pjB" firstAttribute="centerX" secondItem="2Ca-js-BXJ" secondAttribute="centerX" id="u1h-5q-aga"/>
+                            <constraint firstAttribute="bottom" secondItem="owL-KE-J3a" secondAttribute="bottom" constant="40" id="wAG-y0-fF5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EIp-Uu-Wor"/>
+                    <connections>
+                        <outlet property="zodiacTaxtView" destination="tga-AP-W31" id="pEe-za-kCH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7K-xw-IqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2306.0747663551401" y="-30.45356371490281"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vmk-Rf-3RX"/>
-        <segue reference="xul-Lg-U45"/>
+        <segue reference="wM8-LW-kLx"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="1024" height="1024"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
