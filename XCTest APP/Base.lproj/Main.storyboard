@@ -93,7 +93,7 @@
         <!--ButtonsView-->
         <scene sceneID="VBZ-lr-pyq">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="687-kA-8zC" userLabel="ButtonsView" customClass="ButtonsViewController" customModule="XCTest_APP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="687-kA-8zC" userLabel="ButtonsView" customClass="MenuViewController" customModule="XCTest_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="67y-Oc-hw1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,7 +147,6 @@
                                             <color key="baseBackgroundColor" red="0.31975097349999998" green="0.72720682989999996" blue="0.52090635230000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="changeGreeting" destination="BYZ-38-t0r" eventType="touchUpInside" id="DF5-Qa-zu3"/>
                                             <segue destination="nNK-Cc-w6e" kind="show" id="vmk-Rf-3RX"/>
                                         </connections>
                                     </button>
@@ -240,7 +239,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="3M7-y4-JtC"/>
                     <connections>
-                        <outlet property="textFieldButton" destination="HL8-Cx-t4W" id="1f8-Gf-DTz"/>
+                        <outlet property="alertButton" destination="pXQ-ub-CJQ" id="f7n-XJ-sKr"/>
+                        <outlet property="checkBoxesButton" destination="mRU-fl-bSX" id="cCZ-Rk-crB"/>
+                        <outlet property="datePickerButton" destination="TN3-wL-B5C" id="pyU-l9-K2K"/>
+                        <outlet property="imageButton" destination="Yyz-ex-3eW" id="JWE-0C-l7c"/>
+                        <outlet property="menuLabel" destination="wEx-zD-v8Z" id="rV4-GF-klw"/>
+                        <outlet property="pushButton" destination="UnX-Lb-SQk" id="Fk3-Go-Ych"/>
+                        <outlet property="textFieldsButton" destination="HL8-Cx-t4W" id="d3z-C7-HTl"/>
+                        <outlet property="webviewButton" destination="VXP-zk-n6Z" id="Ldu-ju-q55"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ud-Nr-MnH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
