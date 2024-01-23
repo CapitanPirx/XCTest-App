@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GreetingScreenViewController: UIViewController {
 
 	@IBOutlet weak var greetingView: UITextView!
 	@IBOutlet weak var okayButton: UIButton!
@@ -18,7 +18,9 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		hideNextButton()
-		setAccessibilityButton(nextButton, "NEXT_BUTTON")
+		setAccessibilityButton(nextButton, AccessibilityIds.GreetingScreen.nextButton)
+		setAccessibilityButton(okayButton, AccessibilityIds.GreetingScreen.okayButton)
+		greetingView.accessibilityIdentifier = AccessibilityIds.GreetingScreen.greetingMessage
 	}
 	@IBAction func changeGreeting() {
 		greetingView.text = "Отлично! Начать?"

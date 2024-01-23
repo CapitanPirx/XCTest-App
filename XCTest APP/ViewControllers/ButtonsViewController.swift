@@ -16,6 +16,7 @@ class ButtonsViewController: UIViewController {
 
 	override func viewDidLoad() {
         super.viewDidLoad()
+		textFieldButton.accessibilityIdentifier = "text_field_button"
     }
 	@IBAction func alert(_ sender: UIButton, forEvent event: UIEvent) {
 		showAlert(title: "Вот тебе алерт!", message: "А боттомшит не хочешь?")
