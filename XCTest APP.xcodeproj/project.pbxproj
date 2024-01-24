@@ -16,6 +16,7 @@
 		840A473B2B5263A1001127A5 /* XCTest_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A473A2B5263A1001127A5 /* XCTest_APPTests.swift */; };
 		840A47452B5263A1001127A5 /* XCTest_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A47442B5263A1001127A5 /* XCTest_APPUITests.swift */; };
 		840A47472B5263A1001127A5 /* XCTest_APPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A47462B5263A1001127A5 /* XCTest_APPUITestsLaunchTests.swift */; };
+		8465341F2B6152840034B8C6 /* SwitchersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465341E2B6152840034B8C6 /* SwitchersViewController.swift */; };
 		84A8C4782B5FA4360099BE22 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8C4772B5FA4360099BE22 /* WebviewViewController.swift */; };
 		84A8C47D2B5FB3350099BE22 /* TextFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8C47C2B5FB3350099BE22 /* TextFieldsViewController.swift */; };
 		84A8C47F2B5FCC760099BE22 /* AccessibilityIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8C47E2B5FCC760099BE22 /* AccessibilityIds.swift */; };
@@ -56,6 +57,7 @@
 		840A47402B5263A1001127A5 /* XCTest APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XCTest APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840A47442B5263A1001127A5 /* XCTest_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTest_APPUITests.swift; sourceTree = "<group>"; };
 		840A47462B5263A1001127A5 /* XCTest_APPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTest_APPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8465341E2B6152840034B8C6 /* SwitchersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchersViewController.swift; sourceTree = "<group>"; };
 		84A8C4772B5FA4360099BE22 /* WebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
 		84A8C47C2B5FB3350099BE22 /* TextFieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsViewController.swift; sourceTree = "<group>"; };
 		84A8C47E2B5FCC760099BE22 /* AccessibilityIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIds.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				84AE35BF2B58EA240090F2BD /* DatePickerViewController.swift */,
 				84A9A6D12B53B08300CDA762 /* MenuViewController.swift */,
 				84A8C47C2B5FB3350099BE22 /* TextFieldsViewController.swift */,
+				8465341E2B6152840034B8C6 /* SwitchersViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				84A9A6D22B53B08300CDA762 /* MenuViewController.swift in Sources */,
 				84AE35C02B58EA240090F2BD /* DatePickerViewController.swift in Sources */,
 				840A47282B5263A0001127A5 /* GreetingScreenViewController.swift in Sources */,
+				8465341F2B6152840034B8C6 /* SwitchersViewController.swift in Sources */,
 				84A8C47D2B5FB3350099BE22 /* TextFieldsViewController.swift in Sources */,
 				840A47242B5263A0001127A5 /* AppDelegate.swift in Sources */,
 				840A47262B5263A0001127A5 /* SceneDelegate.swift in Sources */,
