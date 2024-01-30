@@ -15,12 +15,14 @@ class GreetingScreenViewController: UIViewController {
 	
 	
 	
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		hideNextButton()
 		setAccessibilityButton(nextButton, AccessibilityIds.GreetingScreen.nextButton)
 		setAccessibilityButton(okayButton, AccessibilityIds.GreetingScreen.okayButton)
 		greetingView.accessibilityIdentifier = AccessibilityIds.GreetingScreen.greetingMessage
+		
 	}
 	@IBAction func changeGreeting() {
 		greetingView.text = "Отлично! Начать?"
